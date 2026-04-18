@@ -1,10 +1,10 @@
 # Alaganandha Pradeep — Portfolio
 
-A dark, editorial Next.js portfolio built with App Router, Tailwind CSS, and smooth scroll animations.
+An editorial Next.js portfolio built with App Router, Tailwind CSS, and smooth scroll animations talking about everything from art projects to engineering projects
 
 ---
 
-## 🚀 One-click start
+## Has a One-click start Option
 
 ### Mac / Linux
 ```bash
@@ -20,7 +20,7 @@ That's it. It installs dependencies and opens the dev server at **http://localho
 
 ---
 
-## 📁 Adding your photos & videos
+## Adding your photos & videos
 
 Just drop files into these folders — the site picks them up automatically:
 
@@ -35,7 +35,7 @@ Any video format works: `.mp4` `.webm` `.ogg`
 
 ---
 
-## 🧑‍💻 Adding your photo
+##  Adding your photo
 
 Drop your photo as `public/me.jpg` (or `me.png`) — it'll appear in the hero section automatically.
 
@@ -53,7 +53,7 @@ Search for `YOUR_GITHUB` and `YOUR_LINKEDIN` in these files and replace with you
 
 ---
 
-## 📦 Adding more projects
+##  Adding more projects
 
 Open `components/Projects.tsx` and add to the `projects` array at the top. Each project takes:
 
@@ -72,7 +72,7 @@ Open `components/Projects.tsx` and add to the `projects` array at the top. Each 
 
 ---
 
-## 🛠 Manual commands
+##  Manual commands
 
 ```bash
 npm install       # install dependencies
@@ -83,7 +83,7 @@ npm start         # serve production build
 
 ---
 
-## 📂 Project structure
+##  Project structure
 
 ```
 portfolio/
