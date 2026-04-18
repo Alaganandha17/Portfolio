@@ -14,6 +14,8 @@ const projects = [
     color: "var(--accent)",
     big: true,
     ictis: true,
+    github: "https://github.com/Alaganandha17/CodeForge",
+    demo: "https://codeforge-25.streamlit.app/Dashboard",
   },
   {
     title: "AIgenda",
@@ -26,6 +28,8 @@ const projects = [
     color: "var(--accent-2)",
     big: false,
     ictis: false,
+    github: "https://github.com/Alaganandha17/AI-Genda",
+    demo: "",
   },
   {
     title: "E-Commerce Backend",
@@ -38,6 +42,8 @@ const projects = [
     color: "#a78bfa",
     big: false,
     ictis: false,
+    github: "",
+    demo: "",
   },
   {
     title: "URL Shortener",
@@ -50,6 +56,8 @@ const projects = [
     color: "#34d399",
     big: false,
     ictis: false,
+    github: "",
+    demo: "",
   },
 ];
 
@@ -191,22 +199,28 @@ function ProjectCard({
       </div>
 
       <div style={{ display: "flex", gap: "0.6rem", marginTop: "0.25rem" }}>
-        <a
-          href="https://github.com/Alaganandha17"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-ghost"
-          style={{ fontSize: "0.75rem", padding: "0.4rem 0.9rem" }}
-        >
-          GitHub ↗
-        </a>
-        <a
-          href="#"
-          className="btn btn-ghost"
-          style={{ fontSize: "0.75rem", padding: "0.4rem 0.9rem" }}
-        >
-          Live Demo ↗
-        </a>
+        {project.github && (
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-ghost"
+            style={{ fontSize: "0.75rem", padding: "0.4rem 0.9rem" }}
+          >
+            GitHub ↗
+          </a>
+        )}
+        {project.demo && (
+          <a
+            href={project.demo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-ghost"
+            style={{ fontSize: "0.75rem", padding: "0.4rem 0.9rem" }}
+          >
+            Live Demo ↗
+          </a>
+        )}
       </div>
     </div>
   );
@@ -237,7 +251,6 @@ export default function Projects() {
             gap: "1rem",
           }}
         >
-          {/* Big card spans 2 cols */}
           <div className="project-big-col" style={{ gridColumn: "1 / 3" }}>
             <ProjectCard project={projects[0]} delay={0} inView={inView} />
           </div>
