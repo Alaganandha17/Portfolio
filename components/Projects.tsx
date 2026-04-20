@@ -29,7 +29,7 @@ const projects = [
     big: false,
     ictis: false,
     github: "https://github.com/Alaganandha17/AI-Genda",
-    demo: "",
+    demo: "https://aigenda17.netlify.app/",
   },
   {
     title: "E-Commerce Backend",
